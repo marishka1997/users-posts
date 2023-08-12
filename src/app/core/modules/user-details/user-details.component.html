@@ -1,1 +1,29 @@
-<p>user-details works!</p>
+<ng-container *ngIf="user">
+  <mat-card>
+    <div class="back-button">
+      <button mat-button routerLink="../">Back</button>
+    </div>
+    <mat-card-header>
+      <mat-card-title>User Details</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Name:</strong> {{ user.name }}</p>
+      <p><strong>Username:</strong> {{ user.username }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p>
+        <strong>Address:</strong> {{ user.address.street }},
+        {{ user.address.suite }}, {{ user.address.city }} ,
+        {{ user.address.zipcode }}
+      </p>
+      <p><strong>Phone:</strong> {{ user.phone }}</p>
+      <p><strong>Website:</strong> {{ user.website }}</p>
+      <p>
+        <strong>Company:</strong> {{ user.company.name }},
+        {{ user.company.catchPhrase }}, {{ user.company.bs }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button>Posts</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-container>
