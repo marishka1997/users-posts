@@ -1,1 +1,22 @@
-<p>user-posts works!</p>
+<div class="container">
+  <div class="back-button">
+    <button mat-button routerLink="../">Back</button>
+  </div>
+  <ng-container *ngIf="posts$ | async as posts">
+    <div class="post-table">
+      <ng-container *ngFor="let post of posts">
+        <mat-card
+          class="post-card"
+          [style.gridRowEnd]="calculatePostHeight(post.body)"
+        >
+          <mat-card-header>
+            <mat-card-title>{{ post.title }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ post.body }}</p>
+          </mat-card-content>
+        </mat-card>
+      </ng-container>
+    </div>
+  </ng-container>
+</div>
