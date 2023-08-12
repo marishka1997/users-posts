@@ -1,0 +1,73 @@
+@font-face {
+  font-family: Shantell-Sans;
+  src: url(../../../../assets/Shantell-Sans-Italic.ttf);
+}
+
+@font-face {
+  font-family: Dancing-Script;
+  src: url(../../../../assets/Dancing-Script-Regular.ttf);
+}
+
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(../../../../assets/Caveat-Regular.ttf);
+}
+
+.user-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  margin: 20px auto;
+  width: 80%;
+}
+
+mat-card {
+  background-color: #d3fdd3;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+mat-card:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+mat-card-title.card-title {
+  color: #333333;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: all 0.2s ease-in-out;
+  font-family: "Shantell-Sans";
+}
+
+mat-card-subtitle {
+  color: #828282;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+  font-family: "Dancing-Script";
+}
+
+mat-card-title:hover,
+mat-card-subtitle:hover {
+  text-decoration: underline;
+}
+
+mat-card-actions button,
+.back-button button {
+  background-color: #028a0f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: "Caveat-Regular";
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
