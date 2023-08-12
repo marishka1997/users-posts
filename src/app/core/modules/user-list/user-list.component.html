@@ -1,7 +1,7 @@
 <div class="user-table">
   <ng-container *ngIf="users | async as users">
     <ng-container *ngFor="let user of users">
-      <mat-card>
+      <mat-card (click)="viewUserDetails(user.id)">
         <mat-card-header>
           <mat-card-title class="card-title">{{ user.name }}</mat-card-title>
           <mat-card-subtitle>@{{ user.username }}</mat-card-subtitle>
