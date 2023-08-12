@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserListComponent } from './core/modules/user-list/user-list.component';
 import { UserDetailsComponent } from './core/modules/user-details/user-details.component';
 import { UserPostsComponent } from './core/modules/user-posts/user-posts.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +17,8 @@ import { UserPostsComponent } from './core/modules/user-posts/user-posts.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
