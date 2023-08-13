@@ -3,6 +3,8 @@ import { UserListService } from '../../services/user-list.service';
 import { User } from '../../models/user.model';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
@@ -10,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class UserListComponent implements OnInit {
   users!: Observable<User[]>;
+
 
   constructor(private userList: UserListService, private router: Router) {}
 

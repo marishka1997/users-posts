@@ -20,48 +20,42 @@
   justify-items: center;
   margin: 20px auto;
   width: 80%;
-}
-
-mat-card {
-  background-color: #d3fdd3;
-  border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
+  border-radius: 8px;
 }
 
-mat-card:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-mat-card-title.card-title {
+th {
   color: #333333;
   font-size: 19px;
   font-weight: bold;
   margin-bottom: 5px;
   transition: all 0.2s ease-in-out;
   font-family: "Shantell-Sans";
+  cursor: pointer;
 }
 
-mat-card-subtitle {
+td {
   color: #828282;
+  background-color: #d3fdd3;
   font-size: 16px;
   margin-bottom: 10px;
   transition: all 0.2s ease-in-out;
   font-family: "Dancing-Script";
+  cursor: pointer;
 }
 
-mat-card-title:hover,
-mat-card-subtitle:hover {
+td:hover {
   text-decoration: underline;
+  font-size: 18px;
 }
 
-mat-card-actions button,
-.back-button button {
+tr {
+  background-color: #aaffaa;
+}
+
+button {
   background-color: #028a0f;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   padding: 12px 20px;
